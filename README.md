@@ -13,7 +13,7 @@
 | 计算核心 | P3448-0000 4GB Jetson Nano 核心板，无 eMMC |
 | 系统引导 | 4 MiB SPI/QSPI，NVIDIA 官方 L4T 32.7.6 U-Boot |
 | RootFS | Ubuntu 18.04.6、L4T 32.7.6、JetPack 4.6.6、Linux 4.9.337，位于 U 盘 `/dev/sda1` |
-| 系统盘 | SanDisk U 盘 32GB（`0781:5583`）与 64GB（`0781:5581`），两个容量各有一份镜像 |
+| 系统盘 | U 盘 32GB（`0781:5583`）与 64GB（`0781:5581`），两个容量各有一份镜像 |
 | 登录管理器 | LightDM 1.26 + slick-greeter 1.1.4，未安装 GDM3 |
 | Python | 3.6.9，含 `python3-dev`、`python3-venv` 和 JetBot 全套 Python 组件 |
 | 开发环境 | GCC/G++ 7.5、GNU Make、CMake、Git、Vim 8.0 |
