@@ -45,6 +45,7 @@
 | 用户 | `ss` |
 | 根分区 | `/dev/sda1`，25 GB，剩余约 3.2 GB |
 | OpenSSH Client | `1:7.6p1-4ubuntu0.7` |
+| OpenSSH Server | `openssh-server`，`ssh` 服务已启用并监听 22 |
 | usbip | usbip-utils 2.0 |
 | XML 工具 | libxml2-utils `2.9.4+dfsg1-6.1ubuntu1.9` |
 
@@ -77,6 +78,31 @@ ip -br addr
 ```
 
 ## 关键软件
+
+### SSH 服务
+
+虚拟机必须开启 SSH 服务，主机才能远程执行烧录命令、上传 BSP 和读取日志。
+
+安装并启用：
+
+```bash
+sudo apt-get install -y openssh-server
+sudo systemctl enable --now ssh
+```
+
+核对监听：
+
+```bash
+systemctl is-enabled ssh
+systemctl is-active ssh
+ss -ltn | grep ':22'
+```
+
+主机侧连接：
+
+```powershell
+ssh ss@192.168.121.124
+```
 
 ### VirtualBox 和 Guest Additions
 
