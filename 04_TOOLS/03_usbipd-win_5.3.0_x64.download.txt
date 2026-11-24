@@ -1,0 +1,11 @@
+文件：usbipd-win_5.3.0_x64.msi
+大小：4,501,504 字节
+SHA-256：1c984914aec944de19b64eff232421439629699f8138e3ddc29301175bc6d938
+
+下载地址：
+https://github.com/dorssel/usbipd-win/releases/download/v5.3.0/usbipd-win_5.3.0_x64.msi
+
+使用记录：Windows 主机 USB/IP 服务端。安装后 `usbipd` 服务为 Automatic 并运行，用于把 APX 设备转发给 Ubuntu 虚拟机。
+
+校验命令：
+certutil -hashfile usbipd-win_5.3.0_x64.msi SHA256

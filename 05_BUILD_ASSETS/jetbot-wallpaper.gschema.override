@@ -1,0 +1,9 @@
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/jetbot-mini/current-windows-wallpaper.jpg'
+picture-options='zoom'
+
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/backgrounds/jetbot-mini/current-windows-wallpaper.jpg'
+
+[com.canonical.unity-greeter]
+background='/usr/share/backgrounds/jetbot-mini/current-windows-wallpaper.jpg'

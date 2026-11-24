@@ -1,0 +1,10 @@
+Package: ubuntu-wallpapers
+Version: 18.04.1-0ubuntu1+yahboom1
+Architecture: all
+Maintainer: JetBot Mini Image <root@localhost>
+Section: metapackages
+Priority: optional
+Description: JetBot Mini wallpaper metadata placeholder
+ Satisfies the GNOME Shell dependency without installing Ubuntu's
+ stock wallpaper collection. The JetBot Mini wallpaper is managed
+ separately under /usr/share/backgrounds/jetbot-mini.

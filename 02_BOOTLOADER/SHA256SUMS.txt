@@ -1,0 +1,1 @@
+85ea958e2baf8fa3438fe126a51bf681a24b4ce7eeaa2bda8161a52763d1787d  01_spi-backup-32.7.6-working.bin

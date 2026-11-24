@@ -1,0 +1,12 @@
+文件：tegrarcm-master.tar.gz（NVIDIA/tegrarcm 仓库 master 分支归档）
+大小：457,081 字节（2026-11-24 下载快照）
+SHA-256：4e54c743b06b4a6e22f35316328e925109a019c161220ceeb5e2e21a155be0a7
+
+下载地址：
+https://github.com/NVIDIA/tegrarcm/archive/refs/heads/master.tar.gz
+https://codeload.github.com/NVIDIA/tegrarcm/tar.gz/refs/heads/master
+
+使用记录：README 里的 `tegrarcm --rebuild recovery` 操作使用 32 位 tegrarcm。该仓库 master 分支会更新，上面的大小和哈希对应 2026-11-24 的快照。
+
+校验命令：
+sha256sum tegrarcm-master.tar.gz

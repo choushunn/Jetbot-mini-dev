@@ -1,0 +1,10 @@
+# 大体积生成物与下载文件不入库
+01_SYSTEM_IMAGE/*.img
+01_SYSTEM_IMAGE/*.img.gz
+02_BOOTLOADER/*.bin
+03_BUILD_INPUTS/*.tbz2
+03_BUILD_INPUTS/*.tar
+04_TOOLS/*.exe
+04_TOOLS/*.deb
+04_TOOLS/*.msi
+04_TOOLS/*.tar.gz

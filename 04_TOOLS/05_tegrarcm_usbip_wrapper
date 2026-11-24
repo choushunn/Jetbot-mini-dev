@@ -1,0 +1,16 @@
+#!/bin/sh
+set -u
+
+TOOL_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+if ! lsusb | grep -q "0955:7f21"; then
+    for _ in $(seq 1 150); do
+        usbip attach -r 192.168.121.136 -b 4-4 >/dev/null 2>&1 || true
+        if lsusb | grep -q "0955:7f21"; then
+            break
+        fi
+        sleep 0.2
+    done
+fi
+
+exec "$TOOL_DIR/tegrarcm-bin" "$@"
