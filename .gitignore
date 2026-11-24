@@ -8,3 +8,4 @@
 04_TOOLS/*.deb
 04_TOOLS/*.msi
 04_TOOLS/*.tar.gz
+.screenshot/*
