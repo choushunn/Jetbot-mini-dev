@@ -11,9 +11,7 @@
 ```text
 01_SYSTEM_IMAGE/
 ├── 01_JETBOT_MINI_32G_20261124.img
-├── 01_JETBOT_MINI_32G_20261124.img.sha256
 ├── 01_JETBOT_MINI_64G_20261124.img
-├── 01_JETBOT_MINI_64G_20261124.img.sha256
 └── SHA256SUMS.txt
 ```
 
@@ -77,8 +75,7 @@ Get-FileHash .\01_SYSTEM_IMAGE\01_JETBOT_MINI_64G_20261124.img -Algorithm SHA256
 Linux：
 
 ```bash
-sha256sum -c 01_JETBOT_MINI_32G_20261124.img.sha256
-sha256sum -c 01_JETBOT_MINI_64G_20261124.img.sha256
+sha256sum -c SHA256SUMS.txt
 ```
 
 工作区保留未压缩 `.img`，Win32DiskImager 可以直接使用。

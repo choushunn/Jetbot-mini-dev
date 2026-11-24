@@ -57,7 +57,7 @@ SHA-256：08a503bce1fd6f89ea434e784787a5b356bf63fc3b79c2734e501168bb6a59dd
 04_TOOLS/07_install_usbipd.ps1
 ```
 
-每个目录的完整校验清单位于该目录的 `SHA256SUMS.txt`。
+未入库文件的校验清单位于 `01_SYSTEM_IMAGE/SHA256SUMS.txt`、`02_BOOTLOADER/SHA256SUMS.txt` 和 `03_BUILD_INPUTS/SHA256SUMS.txt`。
 
 镜像包清单、APT hold、`fstab` 和 `extlinux.conf` 位于：
 
