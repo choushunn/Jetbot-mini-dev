@@ -6,9 +6,9 @@ Jetbot MINI 硬件实况
 
 ## 一句话结论
 
-当前设备是搭载 **P3448-0000 4GB Jetson Nano 核心板**的 Jetbot MINI。核心板没有 eMMC，载板有 microSD 卡槽；当前完整系统位于 64GB USB U 盘，4 MiB SPI/QSPI 只保存 Bootloader。
+当前设备是搭载 **P3448-0000 4GB Jetson Nano 核心板**的 Jetbot MINI。核心板没有 eMMC，载板有 microSD 卡槽；完整系统位于 USB U 盘，4 MiB SPI/QSPI 只保存 Bootloader。
 
-因此，当前硬件不能把完整操作系统存放在核心板内部，也不能不借助 U 盘、microSD 或更换带 eMMC 的核心板来实现掉电后仍可启动的系统。
+因此，当前硬件不能把完整操作系统存放在核心板内部，必须借助 U 盘、microSD 或更换带 eMMC 的核心板来实现掉电后仍可启动的系统。
 
 ## 计算核心
 
