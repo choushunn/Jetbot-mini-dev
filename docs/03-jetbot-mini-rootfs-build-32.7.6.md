@@ -126,7 +126,7 @@ Python 与应用组件：
 | 蓝牙软件栈 | `bluez` 5.48、`bluetooth`、`bluez-tools` |
 | 蓝牙内核支持 | `CONFIG_BT`、`CONFIG_BT_HCIBTUSB`、`CONFIG_BT_HCIUART`、`CONFIG_BT_RFCOMM` |
 
-Python 3.6 是 JetPack 4.6.6 和当前二进制组件的 ABI 基线。PyTorch、TensorRT Python 绑定、OpenCV、Jetson.GPIO、JetCam、Torch2TRT 和 Jetbotmini 均在该解释器下完成导入验证。镜像不把系统 Python 升级到 3.15；全局替换会破坏上述组件和 Ubuntu 18.04 的系统工具。
+Python 3.6 是 JetPack 4.6.6 和当前二进制组件的 ABI 基线。PyTorch、TensorRT Python 绑定、OpenCV、Jetson.GPIO、JetCam、Torch2TRT 和 Jetbotmini 均在该解释器下完成导入验证。
 
 ## 软件更新
 
