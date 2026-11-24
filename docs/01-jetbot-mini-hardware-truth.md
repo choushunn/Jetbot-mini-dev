@@ -38,7 +38,7 @@ Jetbot MINI 硬件实况
 | SPI/QSPI   | 4 MiB，`/dev/mtdblock0` | 不能，只保存 Bootloader |
 | 核心板 eMMC   | 不存在                    | 当前硬件不能            |
 | 载板 microSD | 有控制器，当前未插卡             | 可以                |
-| USB        | 当前接 64GB SanDisk       | 可以，当前系统正在使用       |
+| USB        | USB 3.0 接口             | 可以                |
 
 ### SPI/QSPI
 
@@ -102,7 +102,7 @@ U-Boot 输出：sdhci@700b0000: 1，sdhci@700b0600: 0
 
 该启动路径未在实机验证。
 
-### 当前 USB 系统盘
+### U 盘（64GB）
 
 | 项目          | 实测结果                   |
 | ----------- | ---------------------- |
@@ -123,7 +123,7 @@ U-Boot 输出：sdhci@700b0000: 1，sdhci@700b0600: 0
 usb-storage.quirks=0781:5581:u
 ```
 
-### 第二个 U 盘（32GB）
+### U 盘（32GB）
 
 | 项目 | 实测结果 |
 | --- | --- |
