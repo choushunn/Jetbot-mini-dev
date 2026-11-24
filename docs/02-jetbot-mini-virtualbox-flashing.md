@@ -467,6 +467,29 @@ scp .\03_BUILD_INPUTS\01_Jetson-210_Linux_R32.7.6_aarch64.tbz2 ss@192.168.121.12
 
 `/build` 位于第二块虚拟盘 `/dev/sdb1`，容量 49GB。当前已保存 32.7.6 RootFS、构建输入和 32G、64G 两个镜像。
 
+### 容量建议
+
+| 用途 | 建议容量 | 下限 |
+| --- | --- | --- |
+| 系统盘 | 40 GB | 32 GB |
+| 数据盘（挂 `/build`） | 80 GB | 64 GB |
+
+数据盘的内容构成：
+
+```text
+L4T BSP 解包                  约 2 GiB
+RootFS 解包                   约 7 GiB
+两个 overlay                  1.7 GiB
+32G、64G 两个 16 GiB 镜像     32 GiB
+镜像生成时的临时空间          约 16 GiB
+```
+
+合计约 59 GiB。49 GB 的数据盘余量不足 10 GiB，制作镜像时会被写满。
+
+系统盘低于 32 GB 时空间不足：Ubuntu 18.04 桌面约 10 GB，加上 BSP、`libxml2-utils`、`usbip`、Guest Additions 和 apt 缓存后接近 20 GB。
+
+单盘方案为 100 GB 一块盘，根分区 40 GB，其余挂 `/build`。
+
 ## 串口与 SSH 分工
 
 SSH 用于：
