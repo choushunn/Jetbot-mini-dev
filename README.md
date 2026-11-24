@@ -6,22 +6,21 @@
 
 资料页提取码：`z2me`
 
-## 当前状态
+## 系统组成
 
-| 项目 | 当前结论 |
+| 项目 | 说明 |
 | --- | --- |
 | 计算核心 | P3448-0000 4GB Jetson Nano 核心板，无 eMMC |
 | 系统引导 | 4 MiB SPI/QSPI，NVIDIA 官方 L4T 32.7.6 U-Boot |
-| RootFS | Ubuntu 18.04.6、L4T 32.7.6、JetPack 4.6.6、Linux 4.9.337 |
-| 启动验证 | U 盘根文件系统、Jetbot Web、JupyterLab、SSH 和 GNOME 桌面均正常 |
-| 系统盘 | SanDisk 32GB（`0781:5583`，当前在机运行）与 64GB（`0781:5581`，序列号 `03028119121425094232`），均已实机启动 |
+| RootFS | Ubuntu 18.04.6、L4T 32.7.6、JetPack 4.6.6、Linux 4.9.337，位于 U 盘 `/dev/sda1` |
+| 系统盘 | SanDisk U 盘 32GB（`0781:5583`）与 64GB（`0781:5581`），两个容量各有一份镜像 |
 | 登录管理器 | LightDM 1.26 + slick-greeter 1.1.4，未安装 GDM3 |
 | Python | 3.6.9，含 `python3-dev`、`python3-venv` 和 JetBot 全套 Python 组件 |
 | 开发环境 | GCC/G++ 7.5、GNU Make、CMake、Git、Vim 8.0 |
-| 蓝牙 | BlueZ 5.48、`bluetooth`、`bluez-tools` 和内核驱动；当前未枚举到蓝牙控制器 |
+| 蓝牙 | BlueZ 5.48、`bluetooth`、`bluez-tools` 和内核驱动 |
 | 系统镜像 | `01_SYSTEM_IMAGE/01_JETBOT_MINI_32G_20261124.img` 与 `01_JETBOT_MINI_64G_20261124.img`，各 16 GiB，按 U 盘 VID:PID 分别带 UAS quirk |
 
-当前运行盘通过 `/dev/sda1` 正常启动，`192.168.121.113` 的 SSH 与 LightDM 图形登录均可用，桌面为 GNOME（会话名 `ux-ubuntu`）。相关服务 `jetbotmini_start`、`jetbotmini_stats`、`nano_jupyter`、`ssh`、`lightdm` 均为 active。构建 RootFS 与两个镜像通过离线挂载、ext4、GPT、包清单和关键文件哈希验证。
+启动验证、服务状态和软件版本见 [06 成功系统记录](docs/06-jetbot-mini-successful-system.md)。
 
 当前核心板没有 eMMC，系统运行在 U 盘上。载板带 microSD 卡槽，该启动路径尚未实机验证。
 
